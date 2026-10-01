@@ -1,2 +1,8 @@
-# music-emotion-classification
-Machine learning-based classification of music into Happy, Sad, Energetic, and Calm moods using Spotify audio features.
+# Music Emotion Classification Using Spotify Audio Features
+
+A machine learning-based music emotion classification system that categorizes
+songs into four emotional classes: Happy, Sad, Energetic, and Calm using
+Spotify audio features.
+
+## Overview
+Digital music streaming platforms mainly use metadata like genre, artist, and popularity for music recommendation, which do not capture the emotional aspect of music for users. As people often search for music based on emotion, there is a growing need for emotion-aware music recommendation systems in Music Information Retrieval (MIR). This research presents a machine learning approach to categorize Spotify songs into four emotions: Happy, Sad, Energetic and Calm. The study uses the Moodify Dataset, which includes around 278,000 Spotify songs labeled by emotion and with features like danceability, energy, loudness, valence, tempo, acousticness, and liveness. Exploratory Data Analysis (EDA) was used to gain insight into feature and class distributions. Preprocessing involved removing duplicates, removing irrelevant features, class balancing (undersampling), removing outliers (IQR-based capping) and scaling features (StandardScaler). Various classification models, such as Logistic Regression, Random Forest, LightGBM, Dense Neural Network (DNN), XGBoost, and TabNet, were trained and tested using accuracy, precision, recall, F1-score, confusion matrix, and ROC-AUC. Our results demonstrate that XGBoost performed the best and was the most robust. The results demonstrate that Spotify audio features are indeed a good fit for capturing emotional features and can be used in building real-world mood-based music recommendation systems.
